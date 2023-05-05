@@ -30,11 +30,13 @@ You can install the development version of DadosBCB like so:
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Buscando dados da série 433
 
 ```{r example}
 library(DadosBCB)
-## basic example code
+
+download_bcb("433", "01-01-2022", "31-12-2022")
+
 ```
 
 What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
