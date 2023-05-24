@@ -4,7 +4,7 @@
 \alias{download_bcb}
 \title{Download data from Banco Central do Brasil (BCB) API}
 \usage{
-download_bcb(codigo, data_inicial, data_final)
+download_bcb(codigo, data_inicial, data_final, download = FALSE)
 }
 \arguments{
 \item{codigo}{A character string representing the series code for the desired data. The series
@@ -12,9 +12,11 @@ code can be found on the BCB website (https://www.bcb.gov.br) or in the BCB API
 documentation (https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries).}
 
 \item{data_inicial}{A character string representing the start date of the desired data in the format
-"dd-mm-yyyy".}
+"dd-mm-yyyy" or "yyyy-mm-dd".}
 
-\item{data_final}{A character string representing the end date of the desired data in the format "dd-mm-yyyy".}
+\item{data_final}{A character string representing the end date of the desired data in the format "dd-mm-yyyy" or "yyyy-mm-dd".}
+
+\item{download}{Logical. Download the data in a excel file? Default is FALSE.}
 }
 \value{
 A tibble with two columns: date and valor.

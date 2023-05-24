@@ -20,7 +20,7 @@ Este pacote busca dados de uma série na API do Banco Central do Brasil e retorn
 You can install the development version of DadosBCB like so:
 
 ``` r
-# https://github.com/jorgeenunes/DadosBCB
+# remotes::install_github("jorgeenunes/DadosBCB")
 ```
 
 ## Example

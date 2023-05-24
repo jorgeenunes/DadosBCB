@@ -13,5 +13,5 @@ handle_api_error(res)
 Retorna um erro com uma mensagem explicativa
 }
 \description{
-#' Função para lidar com possíveis erros na resposta da API
+Função para lidar com possíveis erros na resposta da API do BCB.
 }

@@ -2,3 +2,4 @@
 
 export(download_bcb)
 export(handle_api_error)
+export(transformar_data)

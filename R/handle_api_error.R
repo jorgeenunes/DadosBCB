@@ -1,6 +1,6 @@
 #' Lidar com erros da API
 #'
-#'#' Função para lidar com possíveis erros na resposta da API
+#' Função para lidar com possíveis erros na resposta da API do BCB.
 #'
 #' @param res Resposta da API
 #'
@@ -16,7 +16,8 @@ handle_api_error <- function(res) {
     }
   }
   else if (httr::http_type(res) == "text/html") {
-    stop("Erro na API do Banco Central: página não encontrada")
+    stop("Erro na API do Banco Central: página não encontrada.
+         Consulte os códigos em: https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries")
   }
   else {
     stop("Erro na API do Banco Central: resposta inesperada")

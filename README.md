@@ -9,7 +9,7 @@ retorna os valores da série no período desejado.
 You can install the development version of DadosBCB like so:
 
 ``` r
-# https://github.com/jorgeenunes/DadosBCB
+# remotes::install_github("jorgeenunes/DadosBCB")
 ```
 
 ## Example
